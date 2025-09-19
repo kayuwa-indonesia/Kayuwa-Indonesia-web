@@ -1,3 +1,94 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "A stack of high-quality plywood sheets.",
+      "imageUrl": "https://picsum.photos/seed/101/1200/800",
+      "imageHint": "plywood stack"
+    },
+    {
+      "id": "catalog-1",
+      "description": "Close-up of plywood texture.",
+      "imageUrl": "https://picsum.photos/seed/102/800/600",
+      "imageHint": "wood grain"
+    },
+    {
+      "id": "ai-tool-1",
+      "description": "A person using a laptop to design a project.",
+      "imageUrl": "https://picsum.photos/seed/103/800/600",
+      "imageHint": "laptop design"
+    },
+    {
+      "id": "product-mdf-1",
+      "description": "A sheet of Medium-Density Fibreboard (MDF).",
+      "imageUrl": "https://picsum.photos/seed/1/600/600",
+      "imageHint": "MDF board"
+    },
+    {
+      "id": "product-hpl-1",
+      "description": "A sheet of High-Pressure Laminate (HPL).",
+      "imageUrl": "https://picsum.photos/seed/2/600/600",
+      "imageHint": "laminate sheet"
+    },
+    {
+      "id": "product-birch-1",
+      "description": "A sheet of Birch plywood.",
+      "imageUrl": "https://picsum.photos/seed/3/600/600",
+      "imageHint": "birch wood"
+    },
+    {
+      "id": "product-marine-1",
+      "description": "A sheet of Marine-grade plywood.",
+      "imageUrl": "https://picsum.photos/seed/4/600/600",
+      "imageHint": "waterproof wood"
+    },
+    {
+      "id": "product-osb-1",
+      "description": "A sheet of Oriented Strand Board (OSB).",
+      "imageUrl": "https://picsum.photos/seed/5/600/600",
+      "imageHint": "OSB board"
+    },
+    {
+      "id": "product-particle-1",
+      "description": "A sheet of Particle Board.",
+      "imageUrl": "https://picsum.photos/seed/6/600/600",
+      "imageHint": "particle board"
+    },
+    {
+      "id": "article-1",
+      "description": "An image showing different types of plywood.",
+      "imageUrl": "https://picsum.photos/seed/201/600/400",
+      "imageHint": "plywood types"
+    },
+    {
+      "id": "article-2",
+      "description": "A workshop with tools for woodworking.",
+      "imageUrl": "https://picsum.photos/seed/202/600/400",
+      "imageHint": "woodworking tools"
+    },
+    {
+      "id": "article-3",
+      "description": "A piece of furniture made from plywood.",
+      "imageUrl": "https://picsum.photos/seed/203/600/400",
+      "imageHint": "plywood furniture"
+    },
+    {
+      "id": "article-4",
+      "description": "A person applying finish to a sheet of plywood.",
+      "imageUrl": "https://picsum.photos/seed/204/600/400",
+      "imageHint": "wood finishing"
+    },
+    {
+      "id": "contact-hero",
+      "description": "A customer service representative ready to help.",
+      "imageUrl": "https://picsum.photos/seed/301/1200/400",
+      "imageHint": "customer service"
+    },
+    {
+      "id": "get-offer-hero",
+      "description": "AI brain graphic for offer suggestion page.",
+      "imageUrl": "https://picsum.photos/seed/302/1200/400",
+      "imageHint": "abstract technology"
+    }
+  ]
 }
