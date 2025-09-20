@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -107,6 +108,36 @@
       "description": "A close-up of finished wood panels.",
       "imageUrl": "https://picsum.photos/seed/403/800/600",
       "imageHint": "wood panels"
+    },
+    {
+      "id": "philosophy-bg",
+      "description": "Abstract wood grain for philosophy section background.",
+      "imageUrl": "https://picsum.photos/seed/501/1200/600",
+      "imageHint": "wood grain"
+    },
+    {
+      "id": "features-bg",
+      "description": "A modern plywood factory interior.",
+      "imageUrl": "https://picsum.photos/seed/502/800/1200",
+      "imageHint": "plywood factory"
+    },
+    {
+      "id": "about-dist-1",
+      "description": "A delivery truck on the road.",
+      "imageUrl": "https://picsum.photos/seed/503/600/400",
+      "imageHint": "delivery truck"
+    },
+    {
+      "id": "about-dist-2",
+      "description": "A person carefully inspecting a sheet of plywood.",
+      "imageUrl": "https://picsum.photos/seed/504/600/400",
+      "imageHint": "quality inspection"
+    },
+    {
+      "id": "about-dist-3",
+      "description": "A large warehouse with stacks of wood.",
+      "imageUrl": "https://picsum.photos/seed/505/600/400",
+      "imageHint": "wood warehouse"
     }
   ]
 }
