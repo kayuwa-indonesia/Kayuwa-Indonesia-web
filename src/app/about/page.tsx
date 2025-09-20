@@ -150,7 +150,7 @@ export default function AboutPage() {
             Tentang Kami
           </span>
           <h1 className="text-3xl md:text-5xl font-extrabold my-3 md:mb-8 md:mt-6 md:max-w-4xl mx-auto">
-            Lebih dari 20 Tahun Menjadi Distributor Material Kayu Terpercaya
+            Lebih dari 20 Tahun Menjadi Mitra Terpercaya untuk segala kebutuhan Produksi Anda
           </h1>
           <p className="max-w-4xl mx-auto text-muted-foreground text-lg">
             Sejak 2005, Kayuwa Indonesia Manufacturing telah menjadi Mitra Terpercaya untuk Menyediakan Jasa Laser Cutting dan Menyediakan Bahan Sparepart terpercaya di Makassar. Kami menyediakan berbagai produk berkualitas seperti plywood, MDL, HPL, particle board, dan lainnya untuk kebutuhan konstruksi maupun interior. kami berkomitmen memberikan produk terbaik dan layanan profesional. Bagi kami, kualitas dan pelayanan terbaik bukan sekadar janji, tetapi komitmen nyata yang tercermin dalam moto kami: Kepuasan pelanggan adalah prioritas utama kami.
