@@ -1,6 +1,7 @@
-
 {
   "projects": {
     "default": "kayuwa-indonesia"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
