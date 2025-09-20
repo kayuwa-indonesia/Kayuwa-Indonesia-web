@@ -65,7 +65,7 @@ export default function Home() {
               untuk memenuhi kebutuhan industri dan proyek Anda.
             </p>
             <p className="text-base md:hidden text-slate-100 mb-8">
-              Mitra terpercaya dalam penyediaan material kayu berkualitas tinggi.
+              Mitra terpercaya dalam memberikan Layanan Laser Cutting dan Penyediaan Spare Part berkualitas tinggi.
             </p>
             <Button asChild size="lg" className="font-semibold text-base">
               <Link href="/about">

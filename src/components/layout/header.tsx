@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Phone } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
-import { KayuwaIcon } from '@/components/icons';
 import { cn } from '@/lib/utils';
 import {
   Sheet,
@@ -28,6 +28,8 @@ export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const logoUrl = 'https://firebasestorage.googleapis.com/v0/b/kayuwa-indonesia.firebasestorage.app/o/Kayuwa%20Indonesia%20logo.png?alt=media&token=789594c2-64ed-4d62-96e8-e7faa876e180';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,7 +58,7 @@ export function Header() {
     <header className={headerClasses}>
       <div className="container mx-auto px-4 flex h-20 items-center">
         <Link href="/" className="mr-auto flex items-center space-x-2 md:mr-6">
-          <KayuwaIcon className={cn('h-8 w-8', isHome && !isScrolled ? 'text-white' : 'text-primary')} />
+           <Image src={logoUrl} alt="Kayuwa Indonesia Logo" width={40} height={40} className="h-10 w-10" />
           <span className={cn('font-bold text-lg inline-block font-headline', isHome && !isScrolled ? 'text-white' : 'text-foreground')}>
             Kayuwa Indonesia
           </span>
@@ -94,7 +96,7 @@ export function Header() {
             <SheetContent side="left">
               <SheetHeader>
                 <SheetTitle className="flex items-center space-x-2">
-                  <KayuwaIcon className="h-6 w-6 text-primary" />
+                  <Image src={logoUrl} alt="Kayuwa Indonesia Logo" width={24} height={24} />
                   <span className="font-bold">Kayuwa Indonesia</span>
                 </SheetTitle>
               </SheetHeader>

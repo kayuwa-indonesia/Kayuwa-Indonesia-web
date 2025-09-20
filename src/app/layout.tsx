@@ -9,6 +9,9 @@ import { Plus_Jakarta_Sans } from 'next/font/google'
 export const metadata: Metadata = {
   title: 'Kayuwa Indonesia',
   description: 'Your trusted partner for high-quality plywood solutions.',
+  icons: {
+    icon: 'https://firebasestorage.googleapis.com/v0/b/kayuwa-indonesia.firebasestorage.app/o/Kayuwa%20Indonesia%20logo.png?alt=media&token=789594c2-64ed-4d62-96e8-e7faa876e180',
+  },
 };
 
 const jakarta = Plus_Jakarta_Sans({

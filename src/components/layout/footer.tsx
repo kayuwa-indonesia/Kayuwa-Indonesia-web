@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { KayuwaIcon } from '@/components/icons';
+import Image from 'next/image';
 import { Button } from '../ui/button';
 import { Facebook, Instagram, Linkedin, Youtube, ArrowDown } from 'lucide-react';
 
@@ -19,6 +19,7 @@ const ThreadsIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const logoUrl = 'https://firebasestorage.googleapis.com/v0/b/kayuwa-indonesia.firebasestorage.app/o/Kayuwa%20Indonesia%20logo.png?alt=media&token=789594c2-64ed-4d62-96e8-e7faa876e180';
 
   return (
     <footer className="bg-black text-white">
@@ -74,11 +75,15 @@ export function Footer() {
             <h3 className="mb-4 font-bold text-base text-white">Contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start text-sm text-slate-400">
-                <span className="w-4 mr-3 mt-1"><KayuwaIcon/></span>
+                <span className="w-4 mr-3 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="M2 8.34V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.34" /><path d="m22 6.34-10-4-10 4" /><path d="M2 6.34V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2.34" /><path d="M12 12.34V22" /><path d="M22 10.34V14" /><path d="M2 10.34V14" /><path d="m22 14-10 4-10-4" /></svg>
+                </span>
                 <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Jl. Margomulyo Industri XI 3/DD 16 RT.001 RW.001 Greges, Asemrowo Surabaya</a>
               </li>
                <li className="flex items-start text-sm text-slate-400">
-                <span className="w-4 mr-3 mt-1"><KayuwaIcon/></span>
+                <span className="w-4 mr-3 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="M2 8.34V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.34" /><path d="m22 6.34-10-4-10 4" /><path d="M2 6.34V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2.34" /><path d="M12 12.34V22" /><path d="M22 10.34V14" /><path d="M2 10.34V14" /><path d="m22 14-10 4-10-4" /></svg>
+                </span>
                 <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+62 889-7576-8184</a>
               </li>
             </ul>
@@ -100,7 +105,7 @@ export function Footer() {
       <div className="border-t border-gray-800">
         <div className="container mx-auto flex flex-col-reverse items-center justify-between px-4 py-4 sm:flex-row">
           <div className="mt-4 sm:mt-0 flex items-center">
-             <KayuwaIcon className="h-6 w-6 text-primary" />
+             <Image src={logoUrl} alt="Kayuwa Indonesia Logo" width={24} height={24} />
             <p className="ml-4 text-center text-sm leading-loose text-slate-400 md:text-left">
               © {currentYear} Kayuwa Indonesia. All Rights Reserved.
             </p>
