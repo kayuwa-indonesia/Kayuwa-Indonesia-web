@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Kayuwa Indonesia',
   description: 'Your trusted partner for high-quality plywood solutions.',
   icons: {
-    icon: 'https://firebasestorage.googleapis.com/v0/b/kayuwa-indonesia.firebasestorage.app/o/Kayuwa%20Indonesia%20logo.png?alt=media&token=789594c2-64ed-4d62-96e8-e7faa876e180',
+    icon: 'https://firebasestorage.googleapis.com/v0/b/kayuwa-indonesia.firebasestorage.app/o/Kayuwa%20Indonesia%20logo%201.png?alt=media&token=af842188-de49-4ed3-9dd1-eee2e0892c4f',
   },
 };
 
