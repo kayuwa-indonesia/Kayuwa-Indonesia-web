@@ -51,7 +51,7 @@ export default function Home() {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src="https://firebasestorage.googleapis.com/v0/b/digital-craft-playground.appspot.com/o/dev%2F98188591-9e5c-4a39-940e-53c44c82b5d0%2Fvideo.webm?alt=media&token=8d6a782b-b605-4f4c-811c-227092928574" type="video/webm" />
+          <source src="https://firebasestorage.googleapis.com/v0/b/kayuwa-indonesia.firebasestorage.app/o/Video%2FLaser%20Cutting%20Makassar.mp4?alt=media&token=e8511117-9201-4671-8a94-a0340bbcc9c8" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent" />
         <div className="relative z-10 h-full flex items-center container mx-auto px-4">
