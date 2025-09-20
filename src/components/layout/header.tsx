@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils';
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -99,6 +100,7 @@ export function Header() {
                   <Image src={logoUrl} alt="Kayuwa Indonesia Logo" width={24} height={24} />
                   <span className="font-bold">Kayuwa Indonesia</span>
                 </SheetTitle>
+                <SheetDescription className="sr-only">Mobile navigation menu</SheetDescription>
               </SheetHeader>
               <div className="grid gap-4 py-4">
                 {navLinks.map(({ href, label }) => (

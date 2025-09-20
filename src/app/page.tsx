@@ -53,7 +53,7 @@ export default function Home() {
         >
           <source src="https://firebasestorage.googleapis.com/v0/b/kayuwa-indonesia.firebasestorage.app/o/Video%2FLaser%20Cutting%20Makassar.mp4?alt=media&token=e8511117-9201-4671-8a94-a0340bbcc9c8" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent" />
         <div className="relative z-10 h-full flex items-center justify-center container mx-auto px-4">
           <div className="text-center max-w-3xl">
             <h1 className="text-4xl md:text-7xl font-extrabold md:mb-6 mb-2 text-white">
@@ -162,6 +162,7 @@ export default function Home() {
                             src={image.imageUrl}
                             alt={product.name}
                             fill
+                            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 25vw"
                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                             data-ai-hint={image.imageHint}
                           />
@@ -217,6 +218,7 @@ export default function Home() {
                           src={image.imageUrl}
                           alt={article.title}
                           fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           className="object-cover group-hover:scale-105 transition-transform"
                           data-ai-hint={image.imageHint}
                         />

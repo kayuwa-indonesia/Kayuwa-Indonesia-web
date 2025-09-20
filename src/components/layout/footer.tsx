@@ -78,20 +78,20 @@ export function Footer() {
                 <span className="w-4 mr-3 mt-1">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="M2 8.34V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.34" /><path d="m22 6.34-10-4-10 4" /><path d="M2 6.34V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2.34" /><path d="M12 12.34V22" /><path d="M22 10.34V14" /><path d="M2 10.34V14" /><path d="m22 14-10 4-10-4" /></svg>
                 </span>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Jl. Margomulyo Industri XI 3/DD 16 RT.001 RW.001 Greges, Asemrowo Surabaya</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Jl. Dg Tata Raya No. 46 "Eks Mall Futsal", Makassar</a>
               </li>
                <li className="flex items-start text-sm text-slate-400">
                 <span className="w-4 mr-3 mt-1">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="M2 8.34V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.34" /><path d="m22 6.34-10-4-10 4" /><path d="M2 6.34V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2.34" /><path d="M12 12.34V22" /><path d="M22 10.34V14" /><path d="M2 10.34V14" /><path d="m22 14-10 4-10-4" /></svg>
                 </span>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+62 889-7576-8184</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+62 853-4262-2627</a>
               </li>
             </ul>
           </div>
           
           <div className="md:col-span-2">
             <ul className="mt-8 md:mt-0 flex md:flex-col space-x-6 md:space-x-0 md:space-y-4">
-              <li><a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-400 hover:text-white transition-colors"><Instagram className="w-5 h-5"/> <span className="hidden md:inline-block ml-2 text-sm">Instagram</span></a></li>
+              <li><a href="https://www.instagram.com/kayuwaindonesia?igsh=MWxkdHFneGVjem9xMA==" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-400 hover:text-white transition-colors"><Instagram className="w-5 h-5"/> <span className="hidden md:inline-block ml-2 text-sm">Instagram</span></a></li>
               <li><a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-400 hover:text-white transition-colors"><Facebook className="w-5 h-5"/> <span className="hidden md:inline-block ml-2 text-sm">Facebook</span></a></li>
               <li><a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-400 hover:text-white transition-colors"><Linkedin className="w-5 h-5"/> <span className="hidden md:inline-block ml-2 text-sm">Linkedin</span></a></li>
               <li><a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-400 hover:text-white transition-colors"><Youtube className="w-5 h-5"/> <span className="hidden md:inline-block ml-2 text-sm">Youtube</span></a></li>
