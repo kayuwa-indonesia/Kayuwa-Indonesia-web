@@ -3,9 +3,6 @@ import Link from 'next/link';
 import {
   ArrowRight,
   BookOpen,
-  Cpu,
-  Layers,
-  Wrench,
   ShieldCheck,
   Package,
   Headset,
