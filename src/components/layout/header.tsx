@@ -54,7 +54,7 @@ export function Header() {
 
   return (
     <header className={headerClasses}>
-      <div className="container flex h-20 items-center">
+      <div className="container mx-auto px-4 flex h-20 items-center">
         <Link href="/" className="mr-auto flex items-center space-x-2 md:mr-6">
           <KayuwaIcon className={cn('h-8 w-8', isHome && !isScrolled ? 'text-white' : 'text-primary')} />
           <span className={cn('font-bold text-lg inline-block font-headline', isHome && !isScrolled ? 'text-white' : 'text-foreground')}>

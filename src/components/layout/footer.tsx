@@ -29,20 +29,22 @@ export function Footer() {
           data-ai-hint="wood grain"
         ></div>
         <div className="absolute inset-0 bg-black opacity-80" />
-        <div className="relative z-10 py-16 mx-auto max-w-4xl">
-          <h2 className="mb-12 text-3xl md:text-4xl font-extrabold text-white">
-            Wujudkan Proyek Impian Anda dengan Solusi Material Terbaik!
-          </h2>
-          <Button asChild size="lg" className="font-bold text-base">
-            <Link href="https://api.whatsapp.com/send?phone=6288975768184" target="_blank" rel="noopener noreferrer">
-              Hubungi Kami Sekarang
-              <ArrowDown className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+        <div className="relative z-10 py-16 container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-12 text-3xl md:text-4xl font-extrabold text-white">
+              Wujudkan Proyek Impian Anda dengan Solusi Material Terbaik!
+            </h2>
+            <Button asChild size="lg" className="font-bold text-base">
+              <Link href="https://api.whatsapp.com/send?phone=6288975768184" target="_blank" rel="noopener noreferrer">
+                Hubungi Kami Sekarang
+                <ArrowDown className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
       
-      <div className="container mx-auto px-6 py-16 max-w-7xl">
+      <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-2">
             <h3 className="mb-4 text-base font-bold text-white">Site Map</h3>
@@ -96,7 +98,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-gray-800">
-        <div className="container mx-auto flex flex-col-reverse items-center justify-between px-6 py-4 sm:flex-row max-w-7xl">
+        <div className="container mx-auto flex flex-col-reverse items-center justify-between px-4 py-4 sm:flex-row">
           <div className="mt-4 sm:mt-0 flex items-center">
              <KayuwaIcon className="h-6 w-6 text-primary" />
             <p className="ml-4 text-center text-sm leading-loose text-slate-400 md:text-left">

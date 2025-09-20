@@ -3,7 +3,7 @@ import ProductList from './components/product-list';
 
 export default function ProductsPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-12 md:py-16">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">
           Our Plywood Catalog

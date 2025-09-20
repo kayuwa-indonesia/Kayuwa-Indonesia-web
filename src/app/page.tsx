@@ -112,7 +112,7 @@ export default function Home() {
       
       {/* Services Section */}
       <section className="w-full py-12 md:py-24 bg-secondary/50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-headline">
@@ -141,7 +141,7 @@ export default function Home() {
 
       {/* Products Section */}
       <section className="w-full py-12 md:py-24">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-headline">
@@ -199,7 +199,7 @@ export default function Home() {
 
       {/* Articles Section */}
       <section className="w-full py-12 md:py-24 bg-secondary/50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-3 mb-8">
             <h2 className="text-3xl font-bold tracking-tighter text-center md:text-4xl/tight font-headline">
               From the Knowledge Base
