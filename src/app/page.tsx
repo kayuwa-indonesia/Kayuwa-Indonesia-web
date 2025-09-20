@@ -6,7 +6,9 @@ import {
   Cpu,
   Layers,
   Wrench,
-  Wood,
+  ShieldCheck,
+  Package,
+  Headset,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -14,131 +16,103 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
+  CardContent,
 } from '@/components/ui/card';
 import { articles, products } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-1');
-  const catalogImage = PlaceHolderImages.find(
-    (img) => img.id === 'catalog-1'
-  );
-  const aiImage = PlaceHolderImages.find((img) => img.id === 'ai-tool-1');
+  
+  const services = [
+    {
+      icon: <ShieldCheck className="h-10 w-10 text-primary" />,
+      title: 'Guaranteed Quality',
+      description: 'We provide high-quality products that meet industry standards to ensure customer satisfaction.',
+    },
+    {
+      icon: <Package className="h-10 w-10 text-primary" />,
+      title: 'Wide Product Range',
+      description: 'A diverse selection of plywood to meet various project needs, from construction to furniture.',
+    },
+    {
+      icon: <Headset className="h-10 w-10 text-primary" />,
+      title: 'Excellent Service',
+      description: 'Our professional team is ready to provide the best service and solutions for your needs.',
+    }
+  ];
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-secondary/50">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-            {heroImage && (
-              <div className="relative w-full h-64 lg:h-auto rounded-xl overflow-hidden shadow-2xl">
-                <Image
-                  alt="Plywood stack"
-                  className="object-cover"
-                  fill
-                  src={heroImage.imageUrl}
-                  data-ai-hint={heroImage.imageHint}
-                />
-              </div>
-            )}
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline">
-                  Your Trusted Partner for Plywood Solutions
-                </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  High-quality plywood for any project. Explore our catalog or
-                  let our AI tool suggest the perfect match for your needs.
-                </p>
-              </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button asChild size="lg">
-                  <Link href="/get-offer">
-                    Get an AI-Powered Offer
-                    <Cpu className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link href="/products">
-                    Browse Products
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
+      {/* Hero Section */}
+      <section className="relative w-full h-[60vh] md:h-[80vh] bg-secondary/50 flex items-center justify-center text-center text-white px-4">
+        {heroImage && (
+          <Image
+            alt="Plywood stack background"
+            className="object-cover"
+            fill
+            src={heroImage.imageUrl}
+            data-ai-hint={heroImage.imageHint}
+            priority
+          />
+        )}
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 max-w-3xl space-y-4">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl font-headline">
+            High-Quality Plywood for Every Need
+          </h1>
+          <p className="text-lg md:text-xl text-white/90">
+            Kayuwa Indonesia is your trusted partner for premium plywood solutions, delivering excellence for construction and furniture projects.
+          </p>
+          <Button asChild size="lg">
+            <Link href="/about">
+              Learn More <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
         </div>
       </section>
 
+      {/* Services Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
-                Our Features
-              </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-                Why Choose Kayuwa Indonesia?
+                Why Choose Us?
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                We combine a vast selection with cutting-edge technology to
-                provide you with the best plywood buying experience.
+                We are committed to providing the best products and services for our customers.
               </p>
             </div>
           </div>
           <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3 pt-12">
-            <div className="grid gap-1 text-center">
-              <div className="flex justify-center items-center">
-                <Layers className="h-10 w-10 text-primary" />
+            {services.map((service, index) => (
+              <div key={index} className="grid gap-2 text-center">
+                <div className="flex justify-center items-center">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold">{service.title}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="text-lg font-bold">Comprehensive Catalog</h3>
-              <p className="text-sm text-muted-foreground">
-                Browse our extensive collection of plywood, from MDF to HPL,
-                with detailed specifications for every product.
-              </p>
-            </div>
-            <div className="grid gap-1 text-center">
-              <div className="flex justify-center items-center">
-                <Cpu className="h-10 w-10 text-primary" />
-              </div>
-              <h3 className="text-lg font-bold">AI Offer Suggestions</h3>
-              <p className="text-sm text-muted-foreground">
-                Our intelligent tool analyzes your needs to recommend the best
-                and most cost-effective plywood options.
-              </p>
-            </div>
-            <div className="grid gap-1 text-center">
-              <div className="flex justify-center items-center">
-                <Wrench className="h-10 w-10 text-primary" />
-              </div>
-              <h3 className="text-lg font-bold">Expert Resources</h3>
-              <p className="text-sm text-muted-foreground">
-                Read our articles to learn more about plywood applications,
-                finishing techniques, and industry best practices.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* Products Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary/50">
-        <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-          <div className="space-y-3">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-headline">
-              Explore Our Product Catalog
-            </h2>
-            <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Find the perfect plywood for your next project. Filter by type,
-              size, and more.
-            </p>
-          </div>
-          <div className="mx-auto w-full max-w-sm space-y-2">
-            <Button asChild size="lg" className="w-full">
-              <Link href="/products">
-                View All Products
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-3">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-headline">
+                Explore Our Product Catalog
+              </h2>
+              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Find the perfect plywood for your next project. We offer a wide range of types and sizes.
+              </p>
+            </div>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 pt-8">
             {products.slice(0, 4).map((product) => {
@@ -147,7 +121,7 @@ export default function Home() {
               );
               return (
                 <Link href="/products" key={product.id}>
-                  <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                  <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
                     <CardHeader className="p-0">
                       <div className="relative aspect-square w-full">
                         {image && (
@@ -160,23 +134,32 @@ export default function Home() {
                           />
                         )}
                       </div>
-                      <div className="p-4">
-                        <CardTitle className="text-base">
-                          {product.name}
-                        </CardTitle>
-                        <CardDescription className="text-xs">
-                          {product.type}
-                        </CardDescription>
-                      </div>
                     </CardHeader>
+                    <CardContent className="p-4 flex-grow flex flex-col">
+                      <CardTitle className="text-base font-semibold">
+                        {product.name}
+                      </CardTitle>
+                      <CardDescription className="text-xs mt-1">
+                        {product.type}
+                      </CardDescription>
+                    </CardContent>
                   </Card>
                 </Link>
               );
             })}
           </div>
+          <div className="flex justify-center mt-8">
+            <Button asChild>
+              <Link href="/products">
+                View All Products
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
+      {/* Articles Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="space-y-3 mb-8">
@@ -184,7 +167,7 @@ export default function Home() {
               From the Knowledge Base
             </h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground text-center md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Expand your expertise with our collection of articles.
+              Expand your expertise with our collection of articles and industry insights.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -194,7 +177,7 @@ export default function Home() {
               );
               return (
                 <Link href="/articles" key={article.id}>
-                  <Card className="overflow-hidden group hover:shadow-lg transition-shadow">
+                  <Card className="overflow-hidden group hover:shadow-lg transition-shadow h-full flex flex-col">
                     <div className="relative aspect-video w-full">
                       {image && (
                         <Image
@@ -206,9 +189,9 @@ export default function Home() {
                         />
                       )}
                     </div>
-                    <CardHeader>
-                      <CardTitle>{article.title}</CardTitle>
-                      <CardDescription>
+                    <CardHeader className="flex-grow">
+                      <CardTitle className="text-lg">{article.title}</CardTitle>
+                      <CardDescription className="mt-2 text-sm">
                         {article.description}
                       </CardDescription>
                     </CardHeader>

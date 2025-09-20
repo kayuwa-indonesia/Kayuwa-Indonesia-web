@@ -18,10 +18,10 @@ import {
 
 const navLinks = [
   { href: '/', label: 'Home' },
+  { href: '/about', label: 'About Us' },
   { href: '/products', label: 'Products' },
   { href: '/articles', label: 'Articles' },
-  { href: '/get-offer', label: 'Get an Offer' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/contact', label: 'Contact Us' },
 ];
 
 export function Header() {
@@ -31,13 +31,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+        <Link href="/" className="mr-auto flex items-center space-x-2 md:mr-6">
           <KayuwaIcon className="h-6 w-6 text-primary" />
           <span className="font-bold inline-block font-headline">
             Kayuwa Indonesia
           </span>
         </Link>
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium mx-auto">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
@@ -51,7 +52,12 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end">
+
+        <div className="flex items-center ml-auto">
+          <Button asChild className="hidden md:inline-flex">
+            <Link href="/get-offer">Get an Offer</Link>
+          </Button>
+
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -82,12 +88,12 @@ export function Header() {
                     {label}
                   </Link>
                 ))}
+                <Button asChild className="w-full mt-4" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link href="/get-offer">Get an Offer</Link>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>
-          <Button asChild className="hidden md:inline-flex">
-            <Link href="/contact">Request a Quote</Link>
-          </Button>
         </div>
       </div>
     </header>

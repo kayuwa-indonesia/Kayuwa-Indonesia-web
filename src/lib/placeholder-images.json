@@ -3,7 +3,7 @@
     {
       "id": "hero-1",
       "description": "A stack of high-quality plywood sheets.",
-      "imageUrl": "https://picsum.photos/seed/101/1200/800",
+      "imageUrl": "https://picsum.photos/seed/101/1920/1080",
       "imageHint": "plywood stack"
     },
     {
@@ -89,6 +89,24 @@
       "description": "AI brain graphic for offer suggestion page.",
       "imageUrl": "https://picsum.photos/seed/302/1200/400",
       "imageHint": "abstract technology"
+    },
+    {
+      "id": "about-hero",
+      "description": "A modern office or factory interior.",
+      "imageUrl": "https://picsum.photos/seed/401/1600/600",
+      "imageHint": "modern factory"
+    },
+    {
+      "id": "mission",
+      "description": "Workers in a plywood factory.",
+      "imageUrl": "https://picsum.photos/seed/402/800/800",
+      "imageHint": "factory workers"
+    },
+    {
+      "id": "vision",
+      "description": "A close-up of finished wood panels.",
+      "imageUrl": "https://picsum.photos/seed/403/800/600",
+      "imageHint": "wood panels"
     }
   ]
 }
