@@ -53,18 +53,13 @@ export default function Home() {
         >
           <source src="https://firebasestorage.googleapis.com/v0/b/kayuwa-indonesia.firebasestorage.app/o/Video%2FLaser%20Cutting%20Makassar.mp4?alt=media&token=e8511117-9201-4671-8a94-a0340bbcc9c8" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent" />
-        <div className="relative z-10 h-full flex items-center container mx-auto px-4">
-          <div className="text-center md:text-left max-w-xs md:max-w-3xl">
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 h-full flex items-center justify-center container mx-auto px-4">
+          <div className="text-center max-w-3xl">
             <h1 className="text-4xl md:text-7xl font-extrabold md:mb-6 mb-2 text-white">
               Kayuwa Indonesia
             </h1>
-            <p className="md:text-xl text-base md:mb-6 mb-8 text-slate-100 max-w-3xl hidden md:block">
-              Dengan pengalaman lebih dari 20 tahun, kami telah menjadi mitra terpercaya
-              dalam penyediaan material kayu berkualitas tinggi serta layanan terbaik
-              untuk memenuhi kebutuhan industri dan proyek Anda.
-            </p>
-            <p className="text-base md:hidden text-slate-100 mb-8">
+            <p className="md:text-xl text-base md:mb-6 mb-8 text-slate-100 max-w-3xl">
               Mitra terpercaya dalam memberikan Layanan Laser Cutting dan Penyediaan Spare Part berkualitas tinggi.
             </p>
             <Button asChild size="lg" className="font-semibold text-base">
