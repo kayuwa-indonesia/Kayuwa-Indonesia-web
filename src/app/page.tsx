@@ -6,6 +6,7 @@ import {
   ShieldCheck,
   Package,
   Headset,
+  ChevronRight,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -19,8 +20,8 @@ import { articles, products } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-1');
-  
+  const aboutImage = PlaceHolderImages.find((img) => img.id === 'mission');
+
   const services = [
     {
       icon: <ShieldCheck className="h-10 w-10 text-primary" />,
@@ -42,42 +43,82 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] md:h-[80vh] bg-secondary/50 flex items-center justify-center text-center text-white px-4">
-        {heroImage && (
-          <Image
-            alt="Plywood stack background"
-            className="object-cover"
-            fill
-            src={heroImage.imageUrl}
-            data-ai-hint={heroImage.imageHint}
-            priority
-          />
-        )}
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 max-w-3xl space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl font-headline">
-            High-Quality Plywood for Every Need
-          </h1>
-          <p className="text-lg md:text-xl text-white/90">
-            Kayuwa Indonesia is your trusted partner for premium plywood solutions, delivering excellence for construction and furniture projects.
-          </p>
-          <Button asChild size="lg">
-            <Link href="/about">
-              Learn More <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+      <section className="relative h-screen w-full">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="https://firebasestorage.googleapis.com/v0/b/digital-craft-playground.appspot.com/o/dev%2F98188591-9e5c-4a39-940e-53c44c82b5d0%2Fvideo.webm?alt=media&token=8d6a782b-b605-4f4c-811c-227092928574" type="video/webm" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent" />
+        <div className="relative z-10 h-full flex items-center container mx-auto px-4">
+          <div className="text-center md:text-left max-w-xs md:max-w-3xl">
+            <h1 className="text-4xl md:text-7xl font-extrabold md:mb-6 mb-2 text-white">
+              Kayuwa Indonesia
+            </h1>
+            <p className="md:text-xl text-base md:mb-6 mb-8 text-slate-100 max-w-3xl hidden md:block">
+              Dengan pengalaman lebih dari 20 tahun, kami telah menjadi mitra terpercaya
+              dalam penyediaan material kayu berkualitas tinggi serta layanan terbaik
+              untuk memenuhi kebutuhan industri dan proyek Anda.
+            </p>
+            <p className="text-base md:hidden text-slate-100 mb-8">
+              Mitra terpercaya dalam penyediaan material kayu berkualitas tinggi.
+            </p>
+            <Button asChild size="lg" className="font-semibold text-base">
+              <Link href="/about">
+                Selengkapnya <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section className="bg-white md:py-24 py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
+            <div className="md:order-2">
+              {aboutImage && (
+                <Image
+                  src={aboutImage.imageUrl}
+                  alt="Tentang Kami"
+                  width={600}
+                  height={400}
+                  className="rounded-2xl shadow-lg w-full h-auto object-cover"
+                  data-ai-hint={aboutImage.imageHint}
+                />
+              )}
+            </div>
+            <div className="md:order-1">
+              <span className="inline-block bg-green-50 text-primary text-sm font-semibold py-1 px-3 rounded-full mb-4">
+                About us
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-6">Tentang Kami</h2>
+              <p className="text-muted-foreground text-lg mb-8">
+                Kayuwa Indonesia adalah distributor plywood dan material kayu terpercaya. Berdiri di Surabaya, kami hadir sebagai solusi lengkap untuk kebutuhan material seperti plywood, MDF, HPL, dan particle board. Kami mengutamakan kualitas dan layanan terbaik untuk semua proyek Anda.
+              </p>
+              <Button asChild className="font-bold text-base">
+                <Link href="/about">
+                  Kenali Kami Lebih Dekat <ChevronRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Services Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-12 md:py-24 bg-secondary/50">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
+            <div className="space-y-3">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-headline">
                 Why Choose Us?
               </h2>
-              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 We are committed to providing the best products and services for our customers.
               </p>
             </div>
@@ -99,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary/50">
+      <section className="w-full py-12 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-3">
@@ -118,7 +159,7 @@ export default function Home() {
               );
               return (
                 <Link href="/products" key={product.id}>
-                  <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
+                  <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col group">
                     <CardHeader className="p-0">
                       <div className="relative aspect-square w-full">
                         {image && (
@@ -126,17 +167,17 @@ export default function Home() {
                             src={image.imageUrl}
                             alt={product.name}
                             fill
-                            className="object-cover"
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
                             data-ai-hint={image.imageHint}
                           />
                         )}
                       </div>
                     </CardHeader>
                     <CardContent className="p-4 flex-grow flex flex-col">
-                      <CardTitle className="text-base font-semibold">
+                      <CardTitle className="text-lg font-bold group-hover:text-primary transition-colors">
                         {product.name}
                       </CardTitle>
-                      <CardDescription className="text-xs mt-1">
+                      <CardDescription className="text-sm mt-1">
                         {product.type}
                       </CardDescription>
                     </CardContent>
@@ -157,7 +198,7 @@ export default function Home() {
       </section>
 
       {/* Articles Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-12 md:py-24 bg-secondary/50">
         <div className="container px-4 md:px-6">
           <div className="space-y-3 mb-8">
             <h2 className="text-3xl font-bold tracking-tighter text-center md:text-4xl/tight font-headline">

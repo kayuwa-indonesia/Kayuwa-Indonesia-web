@@ -4,17 +4,17 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
-import { Poppins } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Kayuwa Indonesia',
   description: 'Your trusted partner for high-quality plywood solutions.',
 };
 
-const poppins = Poppins({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-poppins'
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-jakarta'
 })
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={cn(
           'relative h-full font-sans antialiased',
-          poppins.variable
+          jakarta.variable
         )}
       >
         <div className="flex flex-col min-h-screen">
