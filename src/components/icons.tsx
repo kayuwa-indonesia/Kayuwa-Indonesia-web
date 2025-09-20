@@ -1,6 +1,6 @@
 import type { SVGProps } from 'react';
 
-export function PlywoodProIcon(props: SVGProps<SVGSVGElement>) {
+export function KayuwaIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

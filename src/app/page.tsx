@@ -78,7 +78,7 @@ export default function Home() {
                 Our Features
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-                Why Choose Plywood Pro?
+                Why Choose Kayuwa Indonesia?
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 We combine a vast selection with cutting-edge technology to
